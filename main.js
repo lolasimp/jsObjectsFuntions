@@ -33,3 +33,12 @@ var instructorPets = [
 ];
 
 console.log ("instructorPet")
+var = favAnimal = {
+  name: "lola",
+  animal: "dog"
+};
+
+console.log ("instructorPets",instructorPets);
+
+//div id=pet-names
+//loop through instructorPets and print petNameas h1 tag to that div

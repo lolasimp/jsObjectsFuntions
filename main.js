@@ -1,4 +1,5 @@
-var = favAnimal = {
+
+var favAnimal = {
     name: "lola",
     animal: "dog"
 };
@@ -10,6 +11,7 @@ var instructorPets = [
   {
       instructorName: "Zoe",
       petName: "Biff",
+      animalType: "cat",
       isFavorite: false
   },
   {
@@ -17,13 +19,13 @@ var instructorPets = [
     petName: "Whiskey",
     animalType: "cat",
     isFavorite: true
-  }
+  },
   {
     instructorName: "Callan",
     petName: "Seymour",
     animalType: "one eyed dog",
     isFavorite: true
-  }
+  },
   {
     instructorName: "Callan",
     petName: "Wiley",
@@ -32,13 +34,18 @@ var instructorPets = [
   }
 ];
 
-console.log ("instructorPet")
-var = favAnimal = {
-  name: "lola",
-  animal: "dog"
-};
-
 console.log ("instructorPets",instructorPets);
 
 //div id=pet-names
-//loop through instructorPets and print petNameas h1 tag to that div
+//loop through instructorPets and print petName as h1 tag to that div
+var petDiv = document.getElementById("petName");
+for(var i=0; i<instructorPets.length; i++){
+  console.log("animal",instructorPets[i].petName)
+  petDiv.innerHTML += '<h2>'+ instructorPets[i].petName + '</h2>';
+}
+
+
+//    var pet1 = instructorPets[i].petName;
+//    var printPetName = document.getElementById("objects");
+//    printPetName.innerHTML += '<h1>' + pet1 + '</h1>'
+// }
